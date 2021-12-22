@@ -5,5 +5,7 @@ from . import views
 
 urlpatterns = [
     path('', views.hai),
-    path('info',views.hello)
+    path('info',views.hello),
+    path('page',views.greet),
+    path('data',views.send)
 ]

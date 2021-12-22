@@ -8,3 +8,9 @@ def hai(request):
 
 def hello(request):
     return response.HttpResponse("Enjoy Django")
+
+def greet(request):
+    return render(request,'hello.html')
+
+def send(request):
+    return render(request,'passing.html',{"just":"Hello Zealous!"})
